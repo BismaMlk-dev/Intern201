@@ -1,0 +1,271 @@
+/* ===== TeacherAssignments.css ===== */
+
+.ta-container {
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
+.ta-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .ta-content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ta-content {
+    padding: 2.5rem 2rem;
+  }
+}
+
+.ta-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .ta-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.ta-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .ta-title {
+    font-size: 1.875rem;
+  }
+}
+
+.ta-subtitle {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.ta-create-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.ta-create-btn:hover {
+  background: linear-gradient(135deg, #0891b2 0%, #2563eb 100%);
+  box-shadow: 0 6px 25px rgba(6, 182, 212, 0.5);
+  transform: translateY(-1px);
+}
+
+.ta-search-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.ta-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  width: 1rem;
+  height: 1rem;
+}
+
+.ta-search-input {
+  width: 100%;
+  padding: 0.625rem 1rem 0.625rem 2.25rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.ta-search-input:focus {
+  outline: none;
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.25);
+}
+
+@media (min-width: 640px) {
+  .ta-search-input {
+    width: 16rem;
+  }
+}
+
+.ta-table-wrapper {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.ta-table-scroll {
+  overflow-x: auto;
+}
+
+.ta-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.ta-table thead {
+  background: rgba(30, 41, 59, 0.5);
+}
+
+.ta-table th {
+  text-align: left;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .ta-table th {
+    font-size: 0.875rem;
+    padding: 1rem;
+  }
+}
+
+.ta-table td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 640px) {
+  .ta-table td {
+    padding: 1rem;
+  }
+}
+
+.ta-table-row {
+  transition: background 0.3s ease;
+}
+
+.ta-table-row:hover {
+  background: rgba(30, 41, 59, 0.3);
+}
+
+.ta-table-row-alt {
+  background: rgba(15, 23, 42, 0.3);
+}
+
+.ta-table-cell {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .ta-table-cell {
+    font-size: 1rem;
+  }
+}
+
+.ta-status-badge {
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.625rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: fit-content;
+}
+
+@media (min-width: 640px) {
+  .ta-status-badge {
+    font-size: 0.75rem;
+  }
+}
+
+.ta-status-graded {
+  background: rgba(52, 211, 153, 0.2);
+  color: #34d399;
+}
+
+.ta-status-pending {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+}
+
+.ta-status-draft {
+  background: rgba(148, 163, 184, 0.2);
+  color: #94a3b8;
+}
+
+.ta-status-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.ta-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ta-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.ta-action-btn-primary {
+  color: #22d3ee;
+}
+
+.ta-action-btn-primary:hover {
+  color: #06b6d4;
+}
+
+.ta-action-btn-success {
+  color: #34d399;
+}
+
+.ta-action-btn-success:hover {
+  color: #10b981;
+}
+
+.ta-action-btn svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (min-width: 640px) {
+  .ta-action-btn svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

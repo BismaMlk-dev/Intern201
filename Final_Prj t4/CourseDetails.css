@@ -1,0 +1,269 @@
+/* ===== CourseDetails.css ===== */
+
+.cd-container {
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
+.cd-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .cd-content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cd-content {
+    padding: 2.5rem 2rem;
+  }
+}
+
+.cd-back-btn {
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.cd-back-btn:hover {
+  color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .cd-back-btn {
+    font-size: 1rem;
+  }
+}
+
+.cd-header {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .cd-header {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cd-header {
+    padding: 2rem;
+  }
+}
+
+.cd-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .cd-title {
+    font-size: 1.875rem;
+  }
+}
+
+.cd-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .cd-meta-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+.cd-meta-label {
+  color: #94a3b8;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .cd-meta-label {
+    font-size: 0.875rem;
+  }
+}
+
+.cd-meta-value {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .cd-meta-value {
+    font-size: 1rem;
+  }
+}
+
+.cd-rating {
+  color: #f59e0b;
+}
+
+.cd-description {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.cd-progress {
+  margin-top: 1rem;
+}
+
+.cd-curriculum-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .cd-curriculum-title {
+    font-size: 1.25rem;
+  }
+}
+
+.cd-module {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .cd-module {
+    padding: 1.5rem;
+  }
+}
+
+.cd-module-title {
+  color: #22d3ee;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .cd-module-title {
+    font-size: 1rem;
+  }
+}
+
+.cd-lesson-list {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cd-lesson-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .cd-lesson-item {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.cd-lesson-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .cd-lesson-left {
+    gap: 0.75rem;
+  }
+}
+
+.cd-lesson-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.cd-lesson-icon-completed {
+  color: #34d399;
+}
+
+.cd-lesson-icon-locked {
+  color: #64748b;
+}
+
+.cd-lesson-icon-unlocked {
+  color: #3b82f6;
+}
+
+.cd-lesson-title {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.cd-lesson-title-locked {
+  opacity: 0.5;
+}
+
+.cd-lesson-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cd-lesson-duration {
+  color: #94a3b8;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .cd-lesson-duration {
+    font-size: 0.875rem;
+  }
+}
+
+.cd-lesson-start-btn {
+  color: #22d3ee;
+  font-size: 0.75rem;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .cd-lesson-start-btn {
+    font-size: 0.875rem;
+  }
+}
+
+.cd-lesson-start-btn:hover {
+  color: #06b6d4;
+}

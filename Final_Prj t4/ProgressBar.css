@@ -1,0 +1,63 @@
+/* ===== ProgressBar.css ===== */
+
+.pb-wrapper {
+  width: 100%;
+}
+
+.pb-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .pb-header {
+    font-size: 0.875rem;
+  }
+}
+
+.pb-label {
+  color: #94a3b8;
+}
+
+.pb-value {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.pb-track {
+  width: 100%;
+  height: 0.5rem;
+  background: #1e293b;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .pb-track {
+    height: 0.625rem;
+  }
+}
+
+.pb-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.5s ease;
+}
+
+.pb-fill-blue {
+  background: #3b82f6;
+}
+
+.pb-fill-green {
+  background: #34d399;
+}
+
+.pb-fill-yellow {
+  background: #fbbf24;
+}
+
+.pb-fill-red {
+  background: #f87171;
+}

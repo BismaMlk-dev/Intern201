@@ -1,0 +1,205 @@
+/* ===== GradeAssignment.css ===== */
+
+.ga-container {
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
+.ga-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .ga-content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ga-content {
+    padding: 2.5rem 2rem;
+  }
+}
+
+.ga-back-btn {
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.ga-back-btn:hover {
+  color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .ga-back-btn {
+    font-size: 1rem;
+  }
+}
+
+.ga-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .ga-title {
+    font-size: 1.875rem;
+  }
+}
+
+.ga-subtitle {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.ga-submission-card {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .ga-submission-card {
+    padding: 1.5rem;
+  }
+}
+
+.ga-submission-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .ga-submission-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.ga-student-name {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .ga-student-name {
+    font-size: 1.125rem;
+  }
+}
+
+.ga-student-time {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.ga-view-btn {
+  color: #22d3ee;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ga-view-btn:hover {
+  color: #06b6d4;
+}
+
+.ga-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .ga-form-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.ga-form-label {
+  display: block;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.ga-form-input {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.ga-form-input::placeholder {
+  color: #64748b;
+}
+
+.ga-form-input:focus {
+  outline: none;
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.25);
+}
+
+.ga-form-textarea {
+  resize: none;
+}
+
+.ga-submit-btn {
+  margin-top: 1rem;
+  padding: 0.625rem 1.5rem;
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.3);
+}
+
+.ga-submit-btn:hover {
+  background: linear-gradient(135deg, #0891b2 0%, #2563eb 100%);
+  box-shadow: 0 6px 25px rgba(6, 182, 212, 0.5);
+  transform: translateY(-1px);
+}
+
+.ga-graded-badge {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: rgba(52, 211, 153, 0.2);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  border-radius: 0.5rem;
+  color: #34d399;
+  font-size: 0.875rem;
+}

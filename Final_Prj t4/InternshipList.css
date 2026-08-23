@@ -1,0 +1,259 @@
+/* ===== InternshipList.css ===== */
+
+.il-container {
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
+.il-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .il-content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .il-content {
+    padding: 2.5rem 2rem;
+  }
+}
+
+.il-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .il-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.il-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .il-title {
+    font-size: 1.875rem;
+  }
+}
+
+.il-subtitle {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.il-post-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.il-post-btn:hover {
+  background: linear-gradient(135deg, #0891b2 0%, #2563eb 100%);
+  box-shadow: 0 6px 25px rgba(6, 182, 212, 0.5);
+  transform: translateY(-1px);
+}
+
+.il-search-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.il-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  width: 1rem;
+  height: 1rem;
+}
+
+.il-search-input {
+  width: 100%;
+  padding: 0.625rem 1rem 0.625rem 2.25rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.il-search-input:focus {
+  outline: none;
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.25);
+}
+
+@media (min-width: 640px) {
+  .il-search-input {
+    width: 16rem;
+  }
+}
+
+.il-table-wrapper {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.il-table-scroll {
+  overflow-x: auto;
+}
+
+.il-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+.il-table thead {
+  background: rgba(30, 41, 59, 0.5);
+}
+
+.il-table th {
+  text-align: left;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .il-table th {
+    font-size: 0.875rem;
+    padding: 1rem;
+  }
+}
+
+.il-table td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 640px) {
+  .il-table td {
+    padding: 1rem;
+  }
+}
+
+.il-table-row {
+  transition: background 0.3s ease;
+}
+
+.il-table-row:hover {
+  background: rgba(30, 41, 59, 0.3);
+}
+
+.il-table-row-alt {
+  background: rgba(15, 23, 42, 0.3);
+}
+
+.il-table-cell {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .il-table-cell {
+    font-size: 1rem;
+  }
+}
+
+.il-status-badge {
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .il-status-badge {
+    font-size: 0.75rem;
+  }
+}
+
+.il-status-open {
+  background: rgba(52, 211, 153, 0.2);
+  color: #34d399;
+}
+
+.il-status-closed {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.il-status-draft {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+}
+
+.il-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.il-action-btn {
+  color: #22d3ee;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.il-action-btn:hover {
+  color: #06b6d4;
+}
+
+.il-action-btn svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (min-width: 640px) {
+  .il-action-btn svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+.il-action-btn-applications {
+  color: #34d399;
+}
+
+.il-action-btn-applications:hover {
+  color: #10b981;
+}
